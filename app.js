@@ -9,7 +9,7 @@ const app = express();
 const dbURI = "mongodb+srv://Prithviraj:CoQL9nPdLlgCWaDH@cluster0.umchc.mongodb.net/aws?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }) //this return promise
-  .then((result) =>{ console.log("Database-connected"); app.listen(8080)})
+  .then((result) =>{ console.log("Database-connected"); app.listen(80)})
   //after db connected than it will listen to port3000
   .catch(err => console.log(err)); //else errors will be shown
 
